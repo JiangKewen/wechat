@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/dish/index",
+    "pages/newDish/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "一起做菜",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

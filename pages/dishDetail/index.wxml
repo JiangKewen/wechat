@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <van-button type="primary" bindtap="testUser">{{motto}}</van-button>
+</view>

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <van-cell-group class="form-box">
+    <van-field
+      value="{{ dish.name }}"
+      required
+      clearable
+      label="菜品名称"
+      placeholder="请输入名称"
+      error-message="{{dish.nameErr}}"
+      bind:change="onChangeName"
+    />
+
+    <van-field
+      value="{{ dish.dec }}"
+      type="textarea"
+      autosize
+      label="做法"
+      placeholder="请输入做法"
+      required
+      border="{{ false }}"
+      error-message="{{dish.decErr}}"
+      bind:change="onChangeDec"
+    />
+  </van-cell-group>
+  <van-button class='add-btn' type="info" block bindtap="bindAdd">提交</van-button>
+</view>

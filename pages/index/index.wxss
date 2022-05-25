@@ -1,1 +1,13 @@
 /**index.wxss**/
+.menu {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 30rpx 80rpx;
+}
+
+.add-btn {
+  position: fixed;
+  top: 20rpx;
+  right: 16rpx;
+  font-size: 60rpx;
+}

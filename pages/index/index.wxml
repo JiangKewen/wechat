@@ -1,5 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-  <van-button type="primary">{{motto}}</van-button>
-  <!-- <button>{{motto}}</button> -->
+<view class="menu">
+  <!-- <van-button class="add-btn" size="mini" icon="plus" round type="info" /> -->
+  <van-icon class="add-btn" name="add-o" bindtap="bindAdd" />
+  <van-empty wx:if="{{menu.length===0}}" description="暂无菜单" />
+  <van-grid column-num="3" clickable>
+    <van-grid-item icon="photo-o" text="{{item.name}}" wx:for="{{ menu }}" bind:click="bindDetail" data-dish="{{item}}" wx:key="_id" />
+  </van-grid>
 </view>

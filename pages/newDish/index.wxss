@@ -1,0 +1,4 @@
+/**index.wxss**/
+.form-box {
+  margin-bottom: 260rpx;
+}
